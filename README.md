@@ -1,7 +1,8 @@
 # How to Run this Project
 
 1. You can clone this project first
-2. Go to root directory project end type <br>"<b>npm install</b>" and "<b>npm run dev</b>"
+2. Go to root directory project end type <br>"<b>npm install</b>" and "<b>npm run start</b>"
+3. build tailwindcss on you're project, type comman "npx tailwindcss -i ./src/style.css -o ./public/css/style.css --watch"
 
 # SaCode Tailwind CSS Components
 
