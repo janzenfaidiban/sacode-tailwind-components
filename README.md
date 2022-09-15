@@ -3,8 +3,6 @@
 1. You can clone this project first
 2. Go to root directory project end type <br>"<b>npm install</b>" and "<b>npm run dev</b>"
 
-$/- npm run dev
-
 # SaCode Tailwind CSS Components
 
 ✅ Completed <br>
