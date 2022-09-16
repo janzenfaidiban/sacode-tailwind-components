@@ -3,6 +3,7 @@
 1. You can clone this project first
 2. Go to root directory project end type <br>"<b>npm install</b>" and "<b>npm run start</b>"
 3. build tailwindcss on you're project, type comman "npx tailwindcss -i ./src/style.css -o ./public/css/style.css --watch"
+4. if you make tailwindcss CDN don't folow step number 3.
 
 # SaCode Tailwind CSS Components
 
