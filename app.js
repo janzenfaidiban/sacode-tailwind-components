@@ -5,42 +5,6 @@ const port = "3000";
 var fs = require("fs");
 const app = express();
 
-// const data = [
-//   {
-//     id: 1,
-//     name: "Janzen Faidiban",
-//     job: "Developer and UI/UX",
-//     sosmed: {
-//       facebook: "https://facebook.com/janzenfaidiban",
-//       instagram: "https://instagram.com/janzenfaidiban",
-//       twitter: "https://twitter.com/janzenfaidiban",
-//     },
-//     image: "https://avatars.githubusercontent.com/u/45115034?v=4",
-//   },
-//   {
-//     id: 2,
-//     name: "Zonggonau",
-//     job: "Developer and UI/UX",
-//     sosmed: {
-//       facebook: "https://facebook.com/janzenfaidiban",
-//       instagram: "https://instagram.com/janzenfaidiban",
-//       twitter: "https://twitter.com/janzenfaidiban",
-//     },
-//     image: "https://avatars.githubusercontent.com/u/5399749?v=4",
-//   },
-//   {
-//     id: 3,
-//     name: "Antheiz",
-//     job: "Developer and UI/UX",
-//     sosmed: {
-//       facebook: "https://facebook.com/janzenfaidiban",
-//       instagram: "https://instagram.com/janzenfaidiban",
-//       twitter: "https://twitter.com/janzenfaidiban",
-//     },
-//     image: "https://avatars.githubusercontent.com/u/45439030?v=4",
-//   },
-// ];
-
 // config static file
 app.use(express.static("public"));
 app.use("/css", express.static(__dirname + "public/css"));
@@ -57,8 +21,8 @@ app.get("/", (req, res) => {
 app.get("/docs", (req, res) => {
   res.render("docs", { title: "Docs - SaCodeTail" });
 });
-app.get("/donasi", (req, res) => {
-  res.render("donasi", { title: "Donasi - SaCodeTail" });
+app.get("/coffee", (req, res) => {
+  res.render("coffee", { title: "Coffee - SaCodeTail", data: data.data });
 });
 app.get("/about", (req, res) => {
   res.render("about", { title: "About - SaCodeTail" });
