@@ -15,6 +15,7 @@ app.use("/img", express.static(__dirname + "public/img"));
 app.set("views", "./src/views");
 app.set("view engine", "ejs");
 
+// config route
 app.get("/", (req, res) => {
   res.render("index", { title: "SaCodeTail", data: data.data });
 });
@@ -24,9 +25,11 @@ app.get("/docs", (req, res) => {
 app.get("/coffee", (req, res) => {
   res.render("coffee", { title: "Coffee - SaCodeTail", data: data.data });
 });
+
 app.get("/about", (req, res) => {
-  res.render("about", { title: "About - SaCodeTail" });
+  res.render("about", { title: "About - SaCodeTail", data: data.data });
 });
+// end config route
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
