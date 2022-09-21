@@ -1,3 +1,5 @@
+![Default](default.png)
+
 # How to Run this Project
 
 1. You can clone this project first
