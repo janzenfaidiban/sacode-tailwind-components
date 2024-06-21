@@ -1,0 +1,14 @@
+<%- include('./config/head');%>
+<body class="bg-white dark:bg-slate-900">
+  <!-- navbar  -->
+  <%- include('./config/navbar');%>
+  <!-- banner  -->
+  <%- include('./components/pages/banner');%>
+  <!-- Ourt Team Section  -->
+  <%- include('./components/pages/ourteam',{data:data});%>
+  <!-- footer section  -->
+  <%- include('./config/footer'); %>
+  <!-- script  -->
+    <script src="js/config.js"></script>
+  </body>
+</html>

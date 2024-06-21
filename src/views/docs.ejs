@@ -1,0 +1,19 @@
+<%- include('./config/head');%>
+<body class="bg-white dark:bg-slate-900">
+  <!-- navbar  -->
+  <%- include('./config/navbar');%>
+  <div class="inline-flex flex  bg-gray-50 dark:bg-gray-800 w-full">
+    <div>
+      <%- include('./config/sidebar'); %>
+    </div>
+    <div>
+      <%- include('./config/content'); %>
+    </div>
+  </div>
+  <!-- footer  -->
+  <%- include('./config/footer'); %>
+  <!-- script  -->
+    <script src="js/config.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>
